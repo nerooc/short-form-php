@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Embedding Montserrat font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Adding styles -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Adding favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
+
+    <!-- Adding title -->
+    <title>Short Form - Project 2</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img src="./assets/logo.png" class="header__logo" alt="logo"/>
+    </header>
+
+    <!-- LOGIN FORM -->
+    <div class="forms">
+      <form action="#" class="login-form" id="login" method="post">
+        <h2 class="login-form__header">LOGIN</h2>
+        <label for="login-email" class="login-form__label"> Email: </label>
+        <input
+          type="text"
+          name="email"
+          id="login-email"
+          class="login-form__input"
+          placeholder="example@mail.com"
+        />
+        <label for="login-password" class="login-form__label"> Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="login-password"
+          class="login-form__input"
+          placeholder="***********"
+        />
+        <input type="submit" value="Log in!" class="login-form__submit" />
+      </form>
+
+      <form action="#" class="register-form" id="register" method="post">
+        <h2 class="register-form__header">REGISTER</h2>
+        <label for="register-email" class="register-form__label"> Email: </label>
+        <input
+          type="text"
+          name="email"
+          id="register-email"
+          class="register-form__input"
+          placeholder="example@mail.com"
+        />
+        <label for="register-password" class="register-form__label"> Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="register-password"
+          class="register-form__input"
+          placeholder="***********"
+        />
+        <input type="submit" value="Register!" class="register-form__submit" />
+      </form>
+    </div>
+    <hr />
+
+    <!-- ANSWERS FORM -->
+    <form action="#" method="post" id="quiz" class="quiz-form">
+      <ol>
+        <li class="quiz-form__question">
+          <h3 class="quiz-form__question__text">CSS stands for...</h3>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-1-answers"
+              id="question-1-answers-A"
+              value="A"
+            />
+            <label for="question-1-answers-A"
+              >A) Computer Styled Sections
+            </label>
+          </div>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-1-answers"
+              id="question-1-answers-B"
+              value="B"
+            />
+            <label for="question-1-answers-B">B) Cascading Style Sheets</label>
+          </div>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-1-answers"
+              id="question-1-answers-C"
+              value="C"
+            />
+            <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
+          </div>
+        </li>
+
+        <li class="quiz-form__question">
+          <h3 class="quiz-form__question__text">
+            Internet Explorer 6 was released in...
+          </h3>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-2-answers"
+              id="question-2-answers-A"
+              value="A"
+            />
+            <label for="question-2-answers-A">A) 2001</label>
+          </div>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-2-answers"
+              id="question-2-answers-B"
+              value="B"
+            />
+            <label for="question-2-answers-B">B) 1998</label>
+          </div>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-2-answers"
+              id="question-2-answers-C"
+              value="C"
+            />
+            <label for="question-2-answers-C">C) 2006</label>
+          </div>
+        </li>
+
+        <li class="quiz-form__question">
+          <h3 class="quiz-form__question__text">SEO stands for...</h3>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-3-answers"
+              id="question-3-answers-A"
+              value="A"
+            />
+            <label for="question-3-answers-A"
+              >A) Secret Enterprise Organizations</label
+            >
+          </div>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-3-answers"
+              id="question-3-answers-B"
+              value="B"
+            />
+            <label for="question-3-answers-B"
+              >B) Special Endowment Opportunity</label
+            >
+          </div>
+
+          <div class="quiz-form__answer">
+            <input
+              type="radio"
+              name="question-3-answers"
+              id="question-3-answers-C"
+              value="C"
+            />
+            <label for="question-3-answers-C"
+              >C) Search Engine Optimization</label
+            >
+          </div>
+        </li>
+      </ol>
+
+      <input type="submit" value="Submit Form" class="quiz-form__submit" />
+    </form>
+
+    <hr />
+
+    <!-- TABLE -->
+
+    <div class="d-flex flex-column align-items-center">
+      <table class="table rounded border-0 w-75 center">
+        <thead>
+          <tr class="table__body__row">
+            <th scope="col">#</th>
+            <th scope="col">Email</th>
+            <th scope="col">Q1</th>
+            <th scope="col">Q2</th>
+            <th scope="col">Q3</th>
+          </tr>
+        </thead>
+        <tbody class="table__body">
+          
+        </tbody>
+      </table>
+    </div>
+    <hr />
+
+    <div class="graphs__wrapper">
+      <div class="graph__container">
+        QUESTION 1
+        <canvas class="graph1"></canvas>
+      </div>
+
+      <div class="graph__container">
+        QUESTION 2
+        <canvas class="graph2"></canvas>
+      </div>
+
+      <div class="graph__container">
+        QUESTION 3
+        <canvas class="graph3"></canvas>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP (TABELKA) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BIBLIOTEKA CHART.JS DO TWORZENIA WYKRESOW -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="./formHandler.js"></script>
+  </body>
+</html>

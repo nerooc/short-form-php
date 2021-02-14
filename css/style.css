@@ -1,0 +1,181 @@
+/* Basic reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #5cdb95;
+  --color: #05386b;
+  --additional-color: #fff;
+  --font: Montserrat, sans-serif;
+}
+
+/* UNIVERSAL */
+
+body {
+  background-color: var(--background-color) !important;
+  font-family: var(--font) !important;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--color);
+}
+
+.header__logo {
+  width: 200px;
+}
+
+/* FORMS CONTAINER */
+
+.forms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LOGIN FORM */
+
+.login-form {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  height: 200px;
+  justify-content: space-between;
+  color: var(--color);
+
+  margin: 50px auto;
+}
+
+.login-form__header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form__label {
+  margin-bottom: 5px;
+}
+
+.login-form__input {
+  height: 30px;
+  border: 1px solid var(--additional-color);
+  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+
+.login-form__submit {
+  background-color: var(--color);
+  border: none;
+  height: 40px;
+  width: 120px;
+  margin: auto;
+  color: var(--additional-color);
+  font-family: var(--font);
+  font-weight: bold;
+}
+
+/* REGISTER FORM */
+
+.register-form {
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  height: 200px;
+  justify-content: space-between;
+  color: var(--color);
+
+  margin: 50px auto;
+}
+
+.register-form__header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-form__label {
+  margin-bottom: 5px;
+}
+
+.register-form__input {
+  height: 30px;
+  border: 1px solid var(--additional-color);
+  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+
+.register-form__submit {
+  background-color: var(--color);
+  border: none;
+  height: 40px;
+  width: 120px;
+  margin: auto;
+  color: var(--additional-color);
+  font-family: var(--font);
+  font-weight: bold;
+}
+
+/* QUIZ FORM */
+
+.quiz-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 450px;
+  margin: auto;
+}
+
+.quiz-form__question {
+  margin: 20px 0;
+}
+
+.quiz-form__question__text {
+  font-size: 20px;
+}
+
+.quiz-form__answer {
+  margin: 10px 0;
+}
+
+.quiz-form__submit {
+  background-color: var(--color);
+  border: none;
+  height: 50px;
+  width: 150px;
+  color: var(--additional-color);
+  font-family: var(--font);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* ANSWER TABLE */
+
+.table {
+  background-color: white;
+}
+
+/* ANSWER GRAPHS */
+
+.graphs__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.graph__container {
+  border: 2px solid black;
+  flex-basis: 33%;
+}
+
+.graph {
+  margin: 20px;
+  background-color: red;
+}
